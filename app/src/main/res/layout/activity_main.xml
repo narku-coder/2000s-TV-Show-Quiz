@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_title"
+    android:orientation="vertical">
+
+    <!-- EditText for text input -->
+    <TextView
+        android:id="@+id/name_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/Title"
+        android:textColor="#1EB24C"
+        android:textSize="40sp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:ellipsize="marquee"/>
+
+    <!-- Button below EditText, also centered -->
+    <Button
+        android:id="@+id/button_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start_text"
+        android:layout_below="@id/name_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"/>
+</RelativeLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "999556245378",
+    "project_id": "kids-tv-quiz-2000s",
+    "storage_bucket": "kids-tv-quiz-2000s.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999556245378:android:57d63407106caf2ca4919b",
+        "android_client_info": {
+          "package_name": "com.narku.a2000kidstvquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999556245378-gb4j64p9silkabet9b8j63h6lo9f7d5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQWV5kkvo752O30wqfc6Vv_WaIummRtUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999556245378-gb4j64p9silkabet9b8j63h6lo9f7d5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:999556245378:android:dd9851b281972391a4919b",
+        "android_client_info": {
+          "package_name": "com.narku.a2000stvshowquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "999556245378-gb4j64p9silkabet9b8j63h6lo9f7d5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQWV5kkvo752O30wqfc6Vv_WaIummRtUk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "999556245378-gb4j64p9silkabet9b8j63h6lo9f7d5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

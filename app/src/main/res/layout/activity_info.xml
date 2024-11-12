@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background_info"
+    tools:context=".InfoActivity">
+
+    <GridLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:columnCount="2"
+        android:rowCount="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/titleLabelText"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#A415BC"/>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/title_text"
+        android:textSize="32sp"
+        android:textColor="#A415BC"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/network_label_text"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#A415BC"/>
+
+    <TextView
+        android:id="@+id/network_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/network_text"
+        android:textSize="32sp"
+        android:textColor="#A415BC"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/year_label_text"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#BCA415"/>
+
+    <TextView
+        android:id="@+id/year_aired_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/year_aired_text"
+        android:textSize="32sp"
+        android:textColor="#BCA415"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/seasons_label_text"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#2FEC13"/>
+
+    <TextView
+        android:id="@+id/season_num_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/season_num_text"
+        android:textSize="32sp"
+        android:textColor="#2FEC13"/>
+
+
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/back_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="@string/back_text"
+        android:background="@drawable/back_button"
+        android:layout_margin="60dp"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:textColor="#B24C1E"/>
+
+    <Button
+        android:gravity="center"
+        android:id="@+id/more_button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_columnWeight="1"
+        android:layout_rowWeight="1"
+        android:text="@string/more_text"
+        android:layout_margin="60dp"
+        android:background="@drawable/more_button"
+        android:shadowColor="#000000"
+        android:shadowDx="1"
+        android:shadowDy="4"
+        android:shadowRadius="5"
+        android:textColor="#A2530D"/>
+
+</GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
