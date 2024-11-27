@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndActivity">
+
+    <androidx.media3.ui.PlayerView
+        android:id="@+id/endVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/final_score_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/final_score_text"
+            android:textColor="#1EB24C"
+            android:textSize="40sp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:scrollHorizontally="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="40dp"
+            android:layout_margin="20dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:gravity="center"
+                android:id="@+id/exit_button" android:layout_width="100dp" android:layout_height="60dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTint="#401F3E"
+                android:text="@string/quit_text"
+                android:elevation="8dp"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:textColor="#7CC080"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:gravity="center"
+                android:id="@+id/home_button" android:layout_width="100dp" android:layout_height="60dp"
+                android:text="@string/play_again_text"
+                android:elevation="8dp"
+                android:backgroundTint="#f7c59f"
+                android:shadowColor="#000000"
+                android:shadowDx="1"
+                android:shadowDy="4"
+                android:shadowRadius="5"
+                android:textColor="#9FD1F7"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -6,8 +6,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class InfoActivity : AppCompatActivity() {
     lateinit var synopsis: String
@@ -17,10 +15,10 @@ class InfoActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_info)
 
-        var intent: Intent = intent
+        val intent: Intent = intent
         val title = intent.getStringExtra("title")
         val network = intent.getStringExtra("network")
-        val yearAired = intent.getIntExtra("yearAired", 0)
+        val yearsAired = intent.getStringExtra("yearsAired")
         val seasonNum = intent.getIntExtra("seasonNum", 0)
         synopsis = intent.getStringExtra("synopsis").toString()
         vidName = intent.getStringExtra("vidName").toString()
@@ -30,18 +28,18 @@ class InfoActivity : AppCompatActivity() {
         val networkText: TextView = findViewById(R.id.network_text)
         networkText.text = network
         val yearAiredText: TextView = findViewById(R.id.year_aired_text)
-        yearAiredText.setText(yearAired.toString())
+        yearAiredText.text = yearsAired
         val seasonNumText: TextView = findViewById(R.id.season_num_text)
-        seasonNumText.setText(seasonNum.toString())
+        seasonNumText.text = "$seasonNum"
 
         val backButton: Button = findViewById(R.id.back_button)
         backButton.setOnClickListener { finish() }
         val moreButton: Button = findViewById(R.id.more_button)
         moreButton.setOnClickListener {
-            val intent = Intent(this, MoreActivity::class.java)
-            intent.putExtra("synopsis", synopsis)
-            intent.putExtra("vidName", vidName)
-            startActivity(intent) }
+            val intentMore = Intent(this, MoreActivity::class.java)
+            intentMore.putExtra("synopsis", synopsis)
+            intentMore.putExtra("vidName", vidName)
+            startActivity(intentMore) }
     }
 
 }

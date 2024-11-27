@@ -69,4 +69,8 @@
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
     <string name="more_text">More</string>
+    <string name="final_score_text">End of Quiz\n\nFinal Score:</string>
+    <string name="play_again_text">Play Again</string>
+    <string name="quit_text">Quit</string>
+    <string name="sample_show_text">Sample Show</string>
 </resources>

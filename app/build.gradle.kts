@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace = "com.narku.a2000stvshowquiz"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.narku.a2000stvshowquiz"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -63,6 +63,10 @@ dependencies {
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.firebase.storage.ktx)
     implementation(libs.firebase.bom)
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.media3.ui)
+    implementation(libs.androidx.media3.exoplayer.dash)
+    implementation(libs.exoplayer.ui)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
